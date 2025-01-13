@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .resume-container{
+        width: 100vw/2;
+    }
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 30px;
+}
+
+.resume-container{
+    border: solid black 1px;
+}
+
+.full-name {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.email {
+    font-size: 13pt;
+}
+
+.phone-number{
+    font-size: 13pt;
+}
+
+.address {
+    font-size: 13pt;
+}
+
+.section-heading {
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+hr{
+    border-top: 1px solid black;
+}
+
+.input-fields{
+    background-color: rgb(243, 243, 243);
+}
