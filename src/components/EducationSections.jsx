@@ -5,14 +5,14 @@ export default function EducationSection({education}){
             <hr></hr>
             <ul className="flex flex-col text-left">
                 {education.map((degree, index) => (
-                    <li className="flex flex-col" key={index}>
+                    <li className="flex flex-col pb-5" key={index}>
                         <div className="flex flex-row justify-between">
                             <li className="institute">{degree.institute}</li>
-                            <li className="degree-description">{degree.location}</li>    
+                            <li className="place">{degree.location}</li>    
                         </div>
                         <div className="flex flex-row justify-between">
-                            <li className="time-period">{degree.timePeriod}</li>
                             <li className="degree">{degree.degree}</li>
+                            <li className="time-period italic">{degree.timePeriod}</li>
                         </div>
                     </li>
                 ))}

@@ -5,7 +5,7 @@ import SkillsSection from "./SkillsSection";
 
 export default function Resume({ personalInfo, experience, education, skills }) {
   return (
-    <div id="resume-container" className="resume-container flex flex-col w-4/12 bg-white p-4">
+    <div id="resume-container" className="resume-container flex flex-col w-1/2 bg-white p-10">
       <PersonalInforSection
         fullName={personalInfo.fullName}
         email={personalInfo.email}

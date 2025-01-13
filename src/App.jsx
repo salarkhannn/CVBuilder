@@ -30,15 +30,33 @@ function App() {
     pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
     pdf.save("resume.pdf");
   }
+    // <div className="flex flex-row justify-center min-h-screen w-full">
+    //   <div className="flex flex-col w-1/3">
+    //     <h2>Input fields</h2>
+    //     <InputForm data={data} setData={setData} />
+    //     <button
+    //       onClick={downloadPDF}
+    //       className="mt-4 p-2 bg-blue-500 test-white rounded"
+    //     >
+    //       Download Resume as PDF
+    //     </button>
+    //   </div>
+    //   <Resume
+    //     personalInfo={data.personalInfo}
+    //     experience={data.experience}
+    //     education={data.education}
+    //     skills={data.skills}
+    //   />
+    // </div>
 
   return (
-    <div className="flex flex-row justify-center min-h-screen w-full">
-      <div className="">
-        <h2>Input fields</h2>
+    <div className="flex flex-row justify-center min-h-screen w-full gap-8 bg-gray-50 p-8">
+      <div className="flex flex-col w-1/4 min-w-[300px]">
+        <h2 className="text-3xl font-bold mb-6 font-sans">Resume Builder</h2>
         <InputForm data={data} setData={setData} />
         <button
           onClick={downloadPDF}
-          className="mt-4 p-2 bg-blue-500 test-white rounded"
+          className="mt-6 p-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors duration-200 shadow-md"
         >
           Download Resume as PDF
         </button>

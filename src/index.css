@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -49,4 +49,141 @@ hr{
 
 .input-fields{
     background-color: rgb(243, 243, 243);
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    /* font-family: Helvetica, sans-serif; */
+    padding: 30px;
+    background-color: #f5f5f5;
+}
+
+.resume-container {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: none;
+    background-color: white;
+    /* max-width: 800px; */
+    min-height: 1000px;
+}
+
+.full-name {
+    font-size: 24pt;
+    font-weight: bold;
+    color: #000000;
+    margin: 20px 0 0px 0;
+}
+
+.email, .phone-number, .address {
+    font-size: 13pt;
+    color: #000000;
+}
+
+.section-heading {
+    font-size: 15pt;
+    font-weight: bold;
+    color: #000000;
+    margin: 25px 0 10px 0;
+}
+
+.institute {
+    font-weight: bold;
+    color: #000000;
+    font-size: 13pt;
+}
+.place {
+    color: #000000;
+    font-size: 13pt;
+}
+
+.degree, .position {
+    color: #000000;
+    font-size: 13pt;
+}
+
+.time-period, .time, .location {
+    color: #000000;
+    font-size: 13pt;
+}
+
+.description {
+    margin-top: 8px;
+    color: #000000;
+    line-height: 1.5;
+}
+
+.education-section, .experience-section, .skills-section {
+    background-color: #f8fafc;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+
+h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 25px 0 15px 0;
+}
+
+hr {
+    border-top: 1px solid #000000;
+    margin: 3px 0 15px 0;
+}
+
+.input-fields {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+    transition: border-color 0.2s ease;
+}
+
+.input-fields:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.form-container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    color: #2c3e50;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    transition: background-color 0.2s ease;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button[type="button"] {
+    border: none !important;
+}
+
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
 }
