@@ -8,26 +8,32 @@ const defaultData = {
   
     experience: [
       {
-        place: "Academy",
-        position: "Student",
-        time: "2016-2023",
-        description: "In hell for 7 years",
+        place: "Company 1",
+        position: "Position 1",
+        time: "2022-Present",
+        description: "I started working at this company at this time. My job includes this and that",
       },
       {
-        place: "userUni",
-        position: "Student",
-        time: "September 2023-July 2024",
-        description: "I was a student for 4 years",
+        place: "Company 2",
+        position: "Position 2",
+        time: "2016-2022",
+        description: "I worked at this company from 2016 to 2022",
       },
     ],
   
     education: [
       {
-        institute: "school",
-        timePeriod: "September 2023-present",
+        institute: "University",
+        timePeriod: "September 2023 - 2027",
         location: "city, country",
-        degree: "Diploma",
+        degree: "Bachelors in [Subject]",
       },
+      {
+        institute: "School Name",
+        timePeriod: "2016 - 2023",
+        location: "city, country",
+        degree: "High School Diploma",
+      }
     ],
   
     skills: [
@@ -35,6 +41,14 @@ const defaultData = {
         name: "Python",
         level: "Intermediate",
       },
+      {
+        name: "JS",
+        level: "Advanced",
+      },
+      {
+        name: "React",
+        level: "Advanced",
+      }
     ],
   };
   
